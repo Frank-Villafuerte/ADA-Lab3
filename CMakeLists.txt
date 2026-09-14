@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+add_subdirectory(mergesort)
+add_subdirectory(quicksort)
+add_subdirectory(sortNsearch)
+add_subdirectory(compare)
+add_subdirectory(inversesort)
