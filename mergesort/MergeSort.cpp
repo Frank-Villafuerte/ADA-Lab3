@@ -1,5 +1,6 @@
 #include "MergeSort.h"
 #include <iostream>
+#include "types.h"
 
 template<typename T>
 void MergeSort<T>::Sort(vector<T>& list, int low, int high)
@@ -30,12 +31,13 @@ template<typename T>
 void MergeSort<T>::Sort(vector<T>& list,bool inverse)
 {
 	inverseOrder = inverse;
-	aux.assign(list.size(), 0);//iniciar vector vacío.
+	aux.assign(list.size(), T());//iniciar vector vacío.
 	Sort(list, 0, list.size() - 1);
 }
 
 //tipos permitidos
 template class MergeSort<int>;
 template class MergeSort<float>;
+template class MergeSort<Student>;
 
 	
